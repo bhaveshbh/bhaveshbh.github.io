@@ -1,0 +1,42 @@
+@keyframes blink
+{
+	0%{color:#000;}
+	49%{color:#000;}
+	60%{color:transparent;}
+	99%{color:transparent;}
+	100%{color:#000;}
+}
+
+body
+{
+	background: #eee;
+}
+
+.holder
+{
+	clear:both;
+	font-size: 2em;
+	background: #fff;
+	padding: 0.5em;
+	border-radius: 0.25em;
+	margin: 20% 20% 0 20%;
+	border-right: 0.1em solid #ccc;
+	border-bottom: 0.1em solid #ccc;
+}
+
+.desc
+{
+	margin: 0 20% 0 20%;
+	clear:both;
+	font-size: 0.6em;
+	color: #888;
+	font-style: italic;
+	text-align: right;
+}
+
+.cursor
+{
+	animation-name: blink;
+	animation-duration: 1.2s;
+	animation-iteration-count: infinite;
+}
